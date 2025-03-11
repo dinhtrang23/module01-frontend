@@ -9,6 +9,7 @@ p.do{
 }
 p.vang{
     background-color: yellow;
+    border-left: 6px solid orange;
 }
 span{
     color: orange;
