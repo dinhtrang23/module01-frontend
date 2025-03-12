@@ -1,0 +1,7 @@
+button{
+    background-color: 	#DDDDDD;
+    font-size: 25px;
+}
+button:active{
+    background-color: red;
+}

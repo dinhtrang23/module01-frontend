@@ -1,0 +1,8 @@
+p{
+    background-color: #C0C0C0;
+    height: 50px;
+    
+}
+p:hover{
+    background-color: #333333;
+}

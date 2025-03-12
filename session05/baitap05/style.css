@@ -1,0 +1,14 @@
+div.relative{
+    position: relative; 
+    height: 100vh;
+}
+div.absolute{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: green;
+    height: 50px;
+    
+    
+}
