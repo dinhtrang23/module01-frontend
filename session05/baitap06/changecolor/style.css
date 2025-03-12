@@ -1,0 +1,7 @@
+button{
+  background-color: 	#484141;
+  font-size: 25px;
+}
+button:active{
+  background-color: rgb(38, 95, 186);
+}

@@ -1,0 +1,12 @@
+div{
+    padding: 30px;
+    width: 200px;
+    background: #444444;
+    color: azure;
+    text-align: center;
+    margin: 100px auto;
+}
+div:hover{
+    background: #444444;
+    transform:scale(0.7);
+}

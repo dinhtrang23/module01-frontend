@@ -1,0 +1,21 @@
+div{
+    background: #260bb0;
+    width: 260px;
+    margin: 100px auto;
+    height: 160px;
+}
+
+.scale{
+    padding: 30px;
+    width: 200px;
+    background: #444444;
+    color: azure;
+    text-align: center;
+    margin: 100px auto;
+    height: 100px;
+}
+
+.scale:hover{
+    background: #444444;
+    transform: scale(0.8);
+}
