@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main, #main2 {
+    width: 780px;
+    height: 50px;
+    border: 1px solid #060606;
+    display: flex;
+  }
+  
+  #main div {
+    flex-grow: 0;
+    flex-basis: 200px;
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid #ffffff;
+    
+  }
+  #main2 div {
+    flex-grow: 0;
+    flex-basis: 220px;
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid #ffffff;
+    
+  }
+  
+  #main2 div:nth-of-type(1) {
+    flex-grow: 1;
+  }

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+#box1,#box2{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}  
+.box-item{
+    background-color:blueviolet;
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    border: 5px solid white;
+}
