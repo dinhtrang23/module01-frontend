@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.left{
+    background-color: rgb(213, 218, 222);
+    width: 200px;
+    height: 500px;
+    float: left;
+    
+}
+li:hover{
+    background-color: greenyellow;
+}
+a{
+    text-decoration: none;
+}
