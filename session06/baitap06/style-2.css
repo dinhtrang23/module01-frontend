@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.image{
+    color: white;
+    width:500px;
+    height: 200px;
+    border:1px solid black;
+    margin: 50px;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)url(""));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.image p{
+    position: absolute;
+    bottom: 30px;
+    padding-left: 100px;
+}

@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background-color: green;
+    color: aliceblue;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    line-height: 50px;
+}
+.left{
+    float:left ;
+}
+.right{
+    float: right;
+    
+}
+.right ul{
+    list-style: none;
+}
+.menu .right ul li{
+    display: inline;
+}
+.menu .right ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.content{
+    height: 420px;
+    text-align: center;
+    margin-top: 84px;
+}
+button{
+    background-color: greenyellow;
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+}
+span{
+    display:inline-block ;
+    background-color: rgb(142, 142, 142);
+    height: 70px;
+    margin-top: 150px;
+    width: 500px;
+    text-align: center;
+    line-height: 70px;
+}
+.footer{
+    background-color: black;
+    color: aliceblue;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}

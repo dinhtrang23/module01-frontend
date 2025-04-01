@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 700px;
+    border: 1px solid black;
+    background-color: azure;
+    margin: 0 auto;
+}
+.image{
+    width: 300px;
+    display: inline-block;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+.content{
+    display:inline-block ;
+    background-color: red;
+    width: 50%;
+    height: 200px;
+}
+.dot{
+    font-size: 40px;
+    color: aliceblue;
+    position: relative;
+    top:20px;
+}

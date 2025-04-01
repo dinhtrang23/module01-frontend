@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    background-color: rgb(2, 215, 144);
+    height: 80px;
+    text-align: center;
+    list-style: none;
+    
+}
+.menu h1{
+    color: aliceblue;
+    text-align: center;
+}
+.menu ul{
+    border-width: 1px 0;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    display: inline-block;
+}
+.noidung{
+    height: 500px;
+}
+.category{
+    float: left;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(214, 219, 224);
+}
+.content{
+    float: right;
+    width: 700px;
+    height: 500px;
+    padding-right: 80px;
+    
+}
+img{
+    width: 90px;
+    height: 100px;
+}
+.footer{
+    background-color: black;
+    height: 50px;
+    color: aliceblue;
+    text-align: center;
+}

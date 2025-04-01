@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background-color: rgb(6, 9, 33);
+    color: white;
+    padding: 15px;
+}
+.menu h1{
+    padding-top: 50px;
+    display: inline-block;
+}
+.menu ul{
+    text-align: right; 
+}
+.menu ul li{
+    padding: 12px;
+    margin-bottom: 12px;
+    display: inline-block;
+    
+    
+}
+.welcome{
+    background-color: rgb(199, 203, 208);
+    height: 300px;
+    
+}
+.du-an{
+    background-color: rgb(6, 9, 33);
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    color: aliceblue;
+    margin: 20px;
+    padding: 15px;
+    display: inline-block;
+}
+.footer{
+    background-color: rgb(199, 203, 208);
+    height: 150px;
+    text-align: center;
+}
+img{
+    height: 200px;
+    border-radius: 100px;
+}
