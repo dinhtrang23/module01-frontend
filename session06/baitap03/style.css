@@ -35,11 +35,13 @@
     margin: 20px;
     padding: 15px;
     display: inline-block;
+    line-height: 40px;
 }
 .footer{
     background-color: rgb(199, 203, 208);
     height: 150px;
     text-align: center;
+    line-height: 150px;
 }
 img{
     height: 200px;
