@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Logo nằm trên cùng, toàn bộ chiều ngang */
+  .logo-bar {
+    background-color: #f8f9fa;
+    padding: 16px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15);
+    width: 1440px;
+    height: 48px;
+  }
+  
+  .logo-bar img {
+    max-height: 40px;
+  }
+  
+  /* Main body: menu bên trái + content bên phải */
+  .main-body {
+    display: flex;
+    flex: 1;
+    width: 1440px;
+    height: 670px;
+    top:48px;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 240px;
+    height: 670px;
+    background-color: #f2f4f8;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+  }
+  
+  .menu p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .menu h4 {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Content */
+  .content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    width: 1200px;
+    height: 670px;
+    position: relative;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  hr{
+    color: #ccc;
+    
+  }
+
+  .date-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  input[type="text"],
+  input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+  .arrow-container {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .arrow {
+    width: 8px;
+    height: 8px;
+    border: solid #888;
+    border-width: 2px 2px 0 0;
+    cursor: pointer;
+  }
+
+  .up {
+    transform: rotate(-45deg); /* Mũi tên lên */
+  }
+
+  .down {
+    transform: rotate(135deg);  /* Mũi tên xuống */
+  }
+
+  .error-toast {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ffe5e8; /* Màu đỏ cho thông báo lỗi */
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    border-left: 5px solid #ff9800;
+    box-shadow: 0 0 10px rgba(243, 0, 0, 0.4);
+}
+
+.error-toast.show {
+    opacity: 1;
+}
+
+.radio-group {
+  display: flex;
+  gap: 32px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.custom-radio {
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-mark {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #ccc;
+  font-size: 20px;
+}
+
+.custom-radio input[type="radio"]:checked ~ .radio-mark {
+  color: #0243EC;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex-basis: 0;
+  flex: 1;  
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group strong {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.form-container {
+  max-width: 1000px;
+  width: 100%;
+  margin:0 auto;
+  font-family: Arial, sans-serif;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* khoảng cách giữa nút */
+  margin-top: 16px;
+}
+
+.form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addUserBtn {
+  background-color: #007aff;
+  color: white;
+}
+
+#addUserBtn:hover {
+  background-color: #0056b3;
+}
+
+#backBtn {
+  background-color: #6c757d;
+  color: white;
+}
+
+#backBtn:hover {
+  background-color: #5a6268;
+}

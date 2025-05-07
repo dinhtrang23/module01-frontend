@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/project-root/css/addUser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Logo chiếm toàn bộ chiều ngang -->
+        <div class="logo-bar">
+          <img src="../assets/images/trello-logo-full.png.png" alt="Logo">
+        </div>
+    
+        <!-- Thân chính chia làm menu + content -->
+        <div class="main-body">
+          <!-- Menu bên trái -->
+          <div class="sidebar">
+            <div class="menu">
+              <p>YOUR DASHBOARD</p><br>
+              <h4><a href="/project-root/page/usermanager.html"><img src="../assets/icons/manager.png"> User dashboard</a></h4><br>
+              <h4><a href="/project-root/page/addUser.html"><img src="../assets/icons/star.png"> Add new user</a></h4><br>
+              <h4><a href="#" id="signOutLink"><img src="../assets/icons/out.png"> Sign out</a></h4><br>
+            </div>
+          </div>
+    
+          <!-- Content bên phải -->
+          <div class="content">
+            <h2><img src="../assets/icons/managerblack.png"> User Management</h2>
+            <hr/>
+            <h3>Add new user</h3>
+            <div class="form-container">
+            <div class="form-row">
+              <div class="form-group">
+                <strong>User code</strong>
+                <input type="text" id="usercode" name="usercode" readonly>
+              </div>
+            
+              <div class="form-group">
+                <strong>Username</strong>
+                <input type="text" id="username" name="username">
+                <span class="error-msg" id="username-error"></span>
+              </div>
+            </div>
+            
+            <!-- Hàng 2: Email + Password -->
+            <div class="form-row">
+              <div class="form-group">
+                <strong>Email</strong>
+                <input type="text" id="email" name="email">
+                <span class="error-msg" id="email-error"></span>
+              </div>
+            
+              <div class="form-group">
+                <strong>Password</strong>
+                <input type="password" id="pwd" name="pwd">
+                <span class="error-msg" id="pwd-error"></span>
+              </div>
+            </div>
+            
+            <!-- Hàng 3: Role + Birthday + Status -->
+            <div class="form-row">
+              <div class="form-group">
+                <strong>Role</strong>
+                <select id="role" name="role">
+                  <option value="admin">ADMIN</option>
+                  <option value="user">USER</option>
+                </select>
+              </div>
+            
+              <div class="form-group">
+                <strong>Birthday</strong>
+                <div class="date-wrapper">
+                <input type="text" id="birthday" placeholder="dd/mm/yyyy" value="01/01/2000">
+                <div class="arrow-container">
+                  <div class="arrow up" onclick="changeDate(1)"></div>
+                  <div class="arrow down" onclick="changeDate(-1)"></div>
+                </div>
+              </div>
+              </div>
+            
+              <div class="form-group">
+                <strong>Status</strong>
+                <div class="radio-group">
+                  <label class="custom-radio">
+                    <input type="radio" name="status" value="Active" checked>
+                    <span class="radio-mark"><i class="fas fa-circle-check"></i></span>
+                    Active
+                  </label>
+                  <label class="custom-radio">
+                    <input type="radio" name="status" value="Deactivate">
+                    <span class="radio-mark"><i class="fas fa-circle-check"></i></span>
+                    Deactivate
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Optional: Description -->
+            <div class="form-group">
+              <strong>Description</strong>
+              <textarea rows="3" cols="30"></textarea>
+            </div>
+            </div>
+            
+            <div class="form-actions">
+              <button id="backBtn">Back</button>
+              <button id="addUserBtn">Add +</button>
+            </div>
+
+          </div>
+      <script src="../js/addUser.js"></script>
+</body>
+</html>

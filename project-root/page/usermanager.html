@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/project-root/css/usermanager.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Logo chiếm toàn bộ chiều ngang -->
+        <div class="logo-bar">
+          <img src="../assets/images/trello-logo-full.png.png" alt="Logo">
+        </div>
+    
+        <!-- Thân chính chia làm menu + content -->
+        <div class="main-body">
+          <!-- Menu bên trái -->
+          <div class="sidebar">
+            <div class="menu">
+              <p>YOUR DASHBOARD</p><br>
+              <h4><a href="/project-root/page/usermanager.html"><img src="../assets/icons/manager.png"> User dashboard</a></h4><br>
+              <h4><a href="/project-root/page/addUser.html"><img src="../assets/icons/star.png"> Add new user</a></h4><br>
+              <h4><a href="#" id="signOutLink"><img src="../assets/icons/out.png"> Sign out</a></h4><br>
+            </div>
+          </div>
+    
+          <!-- Content bên phải -->
+          <div class="content">
+            <h2><img src="../assets/icons/managerblack.png"> User Management</h2>
+            <hr/>
+            <div class="search-box">
+              <div class="input-wrapper">
+              <input type="text" placeholder="Search user by name">
+              <i class="fas fa-search search-icon"></i>
+            </div>
+            </div>
+            <table class="table table-bordered">
+              <thead class="table-light">
+                <tr>
+                  <th>User code</th>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Birthday</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+
+              </tbody>
+            </table>
+            <div id="pagination" class="pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <script src="/project-root/js/usermanager.js"></script>
+</body>
+</html>
