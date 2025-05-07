@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       usercode: usercode.value.trim(),
       username: username.value.trim(),
       email: email.value.trim(),
-      password: password.value, // có thể mã hóa nếu cần
+      password: password.value,
       role: role.value,
       birthday: birthday.value,
       status: status.value,
@@ -71,6 +71,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Lấy users hiện tại từ localStorage
     const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    //Kiểm tra trùng user name
+    const isDuplicate = users.some(user => user.username.toLowerCase() === username.value.trim().toLowerCase());
+    if (isDuplicate) {
+    document.getElementById("username-error").textContent = "Username đã tồn tại!";
+    return;
+}
 
     // Thêm user mới
     users.push(newUser);
@@ -106,5 +113,16 @@ document.getElementById("signOutLink").addEventListener("click", function (e) {
 
   if (confirm("Bạn có chắc chắn muốn đăng xuất không?")) {
     window.location.href = "/project-root/index.html"; // Chuyển về trang login
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const userDisplay = document.getElementById("loggedInUser");
+
+  if (loggedInUser && loggedInUser.username) {
+    userDisplay.textContent = ` ${loggedInUser.username}`;
+  } else {
+    userDisplay.textContent = "Chưa đăng nhập";
   }
 });

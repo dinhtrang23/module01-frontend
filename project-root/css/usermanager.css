@@ -204,3 +204,18 @@ button.icon-button img {
   border-radius: 16px;
   font-weight: bold;
 }
+
+/* Header chứa tiêu đề và username đăng nhập */
+.header-with-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Username hiển thị bên phải */
+#loggedInUser {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+}

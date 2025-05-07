@@ -97,10 +97,28 @@ function renderPagination(totalUsers) {
     }
   });
 
+    //Xóa user không hợp lệ
+  let users = JSON.parse(localStorage.getItem("users")) || [];
+  const validUsers = users.filter(user =>
+  user.username && user.email && user.role && user.birthday && user.status
+  );
+  localStorage.setItem("users", JSON.stringify(validUsers));
+
   function goToPage(page) {
     currentPage = page;
     showData();
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    const userDisplay = document.getElementById("loggedInUser");
+  
+    if (loggedInUser && loggedInUser.username) {
+      userDisplay.textContent = ` ${loggedInUser.username}`;
+    } else {
+      userDisplay.textContent = "Chưa đăng nhập";
+    }
+  });
 
 showData();
 

@@ -108,3 +108,14 @@ document.getElementById("signOutLink").addEventListener("click", function (e) {
     window.location.href = "/project-root/index.html"; // Chuyển về trang login
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const userDisplay = document.getElementById("loggedInUser");
+
+  if (loggedInUser && loggedInUser.username) {
+    userDisplay.textContent = ` ${loggedInUser.username}`;
+  } else {
+    userDisplay.textContent = "Chưa đăng nhập";
+  }
+});
